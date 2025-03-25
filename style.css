@@ -1,0 +1,57 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #334; /* Darker background for contrast */
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of messages */
+}
+
+canvas {
+    border: 2px solid #111;
+    /* background-color: #87CEEB; */ /* REMOVE THIS LINE */
+    display: block; /* Remove extra space below canvas */
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Add a subtle shadow */
+}
+
+#score {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #eee; /* Lighter text color */
+}
+
+#instructions {
+    color: #bbb; /* Lighter text color */
+    margin-bottom: 10px;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Darker overlay */
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 1.8em;
+    z-index: 10;
+    border: 1px solid #555;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: #eee; /* Lighter text color */
+    text-shadow: 1px 1px 2px #000;
+}
